@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz do Milhão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="jogo">
+    <header class="cabecalho">
+      <div class="icone">✦</div>
+      <p class="sobre-titulo">DESAFIO DE CONHECIMENTOS</p>
+      <h1>Quiz <span>do Milhão</span></h1>
+      <p id="categoria">Conhecimentos gerais</p>
+    </header>
+
+    <section class="painel" aria-live="polite">
+      <div class="status">
+        <span id="numero-pergunta">Pergunta 1 de 5</span>
+        <span id="premio">Prêmio: R$ 0</span>
+      </div>
+      <div class="progresso" aria-label="Progresso do quiz">
+        <div id="barra-progresso" class="barra-progresso"></div>
+      </div>
+      <h2 id="pergunta">Carregando pergunta...</h2>
+      <div id="alternativas" class="alternativas"></div>
+      <p id="mensagem" class="mensagem" role="status"></p>
+      <button id="proxima" class="botao-proxima" disabled>Próxima pergunta <span aria-hidden="true">→</span></button>
+    </section>
+    <p class="rodape">Pense bem antes de responder. Boa sorte!</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
